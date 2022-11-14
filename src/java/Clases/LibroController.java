@@ -39,7 +39,7 @@ public class LibroController {
     }
     
     public boolean getLibro2(Libro libro){        
-        String sql = "INSERT INTO biblioteca.libro(numero_carne, nombre_libro, tipo_de_pasta, editorial, anio_publicacion) ";
+        String sql = "INSERT INTO biblioteca.libro(codigo, nombre_libro, tipo_de_pasta, editorial, anio_publicacion) ";
              sql += " VALUES( ?,?,?,?,?)"; 
         try{
             abrirConexion();
